@@ -20,8 +20,9 @@ jobs:
       YOUTH_READ4: ${{ secrets.YOUTH_READ4 }}
       TZ: Asia/shanghai
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
+      - name: 'checkout codes'
+        run: |
+          git clone https://github.com/Sunert/Scripts.git ~/
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
