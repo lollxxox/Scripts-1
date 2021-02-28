@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: 'checkout codes'
         run: |
-          git clone https://github.com/lollxxox/Scripts-1/.git ~/Scripts
+          git clone https://github.com/lollxxox/Scripts-1.git ~/Scripts
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
